@@ -44,7 +44,6 @@ export const services = [
   {
     title: "Manutenção preventiva e revisão",
     icon: "wrench",
-    optional: false,
     items: [
       {
         title: "Revisão geral (check-up)",
@@ -66,7 +65,6 @@ export const services = [
   {
     title: "Sistema de suspensão, direção e freios",
     icon: "disc",
-    optional: false,
     items: [
       {
         title: "Alinhamento e balanceamento",
@@ -88,7 +86,6 @@ export const services = [
   {
     title: "Injeção eletrônica e diagnóstico",
     icon: "scan",
-    optional: false,
     items: [
       {
         title: "Diagnóstico scanner",
@@ -110,7 +107,6 @@ export const services = [
   {
     title: "Motor e câmbio",
     icon: "cog",
-    optional: false,
     items: [
       {
         title: "Reparo de motor",
@@ -132,7 +128,7 @@ export const services = [
   {
     title: "Serviços especializados",
     icon: "paint",
-    optional: true,
+    wide: true,
     items: [
       {
         title: "Funilaria e pintura",
