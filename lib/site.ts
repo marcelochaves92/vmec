@@ -42,64 +42,147 @@ export const navItems = [
 
 export const services = [
   {
-    title: "Manutenção",
-    description:
-      "Óleo, filtros, freios, suspensão e o que o carro precisa para rodar seguro no dia a dia.",
+    title: "Manutenção preventiva e revisão",
     icon: "wrench",
+    optional: false,
+    items: [
+      {
+        title: "Revisão geral (check-up)",
+        description:
+          "Análise completa de itens de segurança e funcionamento, geralmente feita por quilometragem ou antes de viagens.",
+      },
+      {
+        title: "Troca de óleo e filtros",
+        description:
+          "Substituição do óleo do motor, filtro de óleo, filtro de ar do motor, filtro de combustível e filtro do ar-condicionado.",
+      },
+      {
+        title: "Revisão do sistema de ar-condicionado",
+        description:
+          "Higienização, recarga de gás refrigerante e detecção de vazamentos.",
+      },
+    ],
   },
   {
-    title: "Revisão",
-    description:
-      "Checklist completo para deixar o veículo pronto, com transparência no que precisa ser feito.",
-    icon: "clipboard",
+    title: "Sistema de suspensão, direção e freios",
+    icon: "disc",
+    optional: false,
+    items: [
+      {
+        title: "Alinhamento e balanceamento",
+        description:
+          "Ajuste dos ângulos das rodas e equilíbrio dos pneus para evitar desgaste irregular e garantir estabilidade.",
+      },
+      {
+        title: "Sistema de freios",
+        description:
+          "Troca de pastilhas, discos, lonas, tambores e substituição do fluido de freio.",
+      },
+      {
+        title: "Suspensão e direção",
+        description:
+          "Troca de amortecedores, kit do amortecedor, molas, pivôs, barras de direção e buchas.",
+      },
+    ],
   },
   {
-    title: "Diagnóstico",
-    description:
-      "Identificamos a causa do problema com precisão antes de qualquer reparo desnecessário.",
+    title: "Injeção eletrônica e diagnóstico",
     icon: "scan",
+    optional: false,
+    items: [
+      {
+        title: "Diagnóstico scanner",
+        description:
+          "Uso de computadores (scanners) para ler os códigos de falha da central eletrônica do carro (injeção, ABS, airbags).",
+      },
+      {
+        title: "Limpeza de bicos injetores",
+        description:
+          "Desobstrução dos bicos para garantir a queima correta do combustível.",
+      },
+      {
+        title: "Sistema elétrico",
+        description:
+          "Troca e teste de bateria, alternador, motor de partida, velas e cabos de ignição.",
+      },
+    ],
   },
   {
-    title: "Nacionais e importados",
-    description:
-      "Atendemos diferentes marcas com o mesmo cuidado — do popular ao importado.",
-    icon: "car",
+    title: "Motor e câmbio",
+    icon: "cog",
+    optional: false,
+    items: [
+      {
+        title: "Reparo de motor",
+        description:
+          "Troca de junta de cabeçote, retífica de motor completo, substituição da correia dentada ou corrente de sincronismo.",
+      },
+      {
+        title: "Sistema de arrefecimento",
+        description:
+          "Limpeza do radiador e troca do líquido de arrefecimento (aditivo).",
+      },
+      {
+        title: "Transmissão (câmbio)",
+        description:
+          "Troca do óleo do câmbio (manual ou automático) e manutenção de embreagem.",
+      },
+    ],
+  },
+  {
+    title: "Serviços especializados",
+    icon: "paint",
+    optional: true,
+    items: [
+      {
+        title: "Funilaria e pintura",
+        description: "Reparo de batidas, arranhões e amassados na lataria.",
+      },
+    ],
   },
 ] as const;
 
 export const gallery = [
   {
-    src: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80",
-    alt: "Mecânico trabalhando no motor de um carro",
+    src: "/fotos/fachada.jpg",
+    alt: "Fachada da VMEC Oficina Mecânica no Tatuapé",
+    objectPosition: "center 30%",
   },
   {
-    src: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80",
-    alt: "Revisão de veículo na oficina",
+    src: "/fotos/equipe.jpg",
+    alt: "Mecânicos da VMEC atendendo um veículo",
+    objectPosition: "center 45%",
   },
   {
-    src: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80",
-    alt: "Mecânico em atendimento na oficina",
+    src: "/fotos/importado.jpg",
+    alt: "Mecânico da VMEC em serviço num carro importado",
+    objectPosition: "center 40%",
   },
   {
-    src: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80",
-    alt: "Veículo pronto após revisão",
+    src: "/fotos/uniforme.jpg",
+    alt: "Mecânico da VMEC trabalhando no motor",
+    objectPosition: "center 40%",
   },
   {
-    src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80",
-    alt: "Carro em atendimento na oficina",
+    src: "/fotos/servico-motor.jpg",
+    alt: "Mecânico da VMEC trabalhando no motor com luz de serviço",
+    objectPosition: "center 38%",
   },
   {
-    src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-    alt: "Detalhe de veículo em manutenção",
+    src: "/fotos/ferramentas.jpg",
+    alt: "Ferramentas organizadas da oficina",
+    objectPosition: "center 42%",
   },
 ] as const;
 
 export const heroImage = {
-  src: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=2000&q=80",
-  alt: "Equipe da oficina trabalhando em um veículo",
+  src: "/fotos/hero.jpg",
+  alt: "Mecânico da VMEC trabalhando no motor de um carro",
+  objectPosition: "center 42%",
 };
 
 export const aboutImage = {
-  src: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1400&q=80",
-  alt: "Interior da oficina mecânica",
+  src: "/fotos/sobre.jpg",
+  alt: "Interior da VMEC Oficina Mecânica",
+  objectPosition: "center 38%",
 };

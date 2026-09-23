@@ -15,7 +15,8 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-center"
+        className="object-cover"
+        style={{ objectPosition: heroImage.objectPosition }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/40" />
       <div className="relative mx-auto w-full max-w-6xl px-4 py-24 md:py-32">

@@ -22,6 +22,7 @@ export function Gallery() {
               fill
               sizes="(max-width: 768px) 50vw, 33vw"
               className="object-cover transition-transform duration-500 hover:scale-105"
+              style={{ objectPosition: item.objectPosition }}
             />
           </figure>
         ))}
