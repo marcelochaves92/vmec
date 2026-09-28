@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.vmecoficinamecanica.com.br"),
   title: {
     default: "VMEC Oficina Mecânica | Manutenção e revisão no Tatuapé",
     template: "%s | VMEC Oficina Mecânica",
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "VMEC Oficina Mecânica | Manutenção e revisão no Tatuapé",
     description: site.description,
+    url: "/",
     locale: "pt_BR",
     type: "website",
     siteName: site.name,
@@ -39,9 +41,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "VMEC Oficina Mecânica | Manutenção e revisão no Tatuapé",
     description: site.description,
-  },
-  icons: {
-    icon: "/logo.svg",
   },
 };
 
