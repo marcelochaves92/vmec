@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@/components/analytics";
+import {
+  Analytics,
+  GoogleTagManagerNoscript,
+  gtmHeadScript,
+} from "@/components/analytics";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -54,10 +58,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-BR"
       className={`dark ${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
     >
-      <Analytics />
+      <head>
+        <script
+          id="google-tag-manager"
+          dangerouslySetInnerHTML={{ __html: gtmHeadScript }}
+        />
+      </head>
       <body className="flex min-h-svh flex-col bg-background font-sans text-foreground">
+        <GoogleTagManagerNoscript />
         {children}
       </body>
+      <Analytics />
     </html>
   );
 }
